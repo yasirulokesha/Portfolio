@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Poppins", system-ui, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  /* h1, h2, h3, h4, h5, h6{} */
+  h1{
+    font-size: 3em;
+  }
+  h2{
+    font-size: 1.5em;
+  }
+  h3{
+    font-size: 1em;
+  }
+  
+}
+
+.skill{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: inherit;
+}
