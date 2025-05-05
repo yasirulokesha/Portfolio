@@ -1,15 +1,15 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import Image from "next/image";
 import img from "@/assets/Asset 5.png";
 
 import gsap from "gsap";
 import { ArrowUpRight, GithubIcon } from "lucide-react";
-import { useActiveSectionContext } from "./activeContext";
+// import { useActiveSectionContext } from "./activeContext";
 
 export default function Projects() {
-  const { setActive } = useActiveSectionContext();
+//   const { setActive } = useActiveSectionContext();
 
   const imageRef = useRef(null);
   const fNameRef = useRef(null);
@@ -17,11 +17,11 @@ export default function Projects() {
   const taglineRef = useRef(null);
   const sectionRef = useRef<HTMLElement[]>([]);
 
-  const addSectionRef = (section: HTMLElement | null) => {
-    if (section && !sectionRef.current.includes(section)) {
-      sectionRef.current.push(section);
-    }
-  };
+//   const addSectionRef = (section: HTMLElement | null) => {
+//     if (section && !sectionRef.current.includes(section)) {
+//       sectionRef.current.push(section);
+//     }
+//   };
 
   const project_list = [
     {
@@ -110,7 +110,7 @@ export default function Projects() {
       }
     );
 
-    sectionRef.current.forEach((section, index) => {
+    sectionRef.current.forEach((section) => {
       tl.fromTo(
         section,
         { opacity: 0, y: -20 },

@@ -68,7 +68,7 @@ export default function About() {
       }
     );
 
-    sectionRef.current.forEach((section, index) => {
+    sectionRef.current.forEach((section) => {
       tl.fromTo(
         section,
         { opacity: 0, y: -20 },
@@ -142,7 +142,7 @@ export default function About() {
             <ArrowUpRight className="ml-2 text-blue-400" size={24} />
           </h1>
           <p className="max-w-full font-medium p-8 bg-gray-800/80 backdrop-blur-sm rounded-xl shadow-lg text-gray-200 border border-gray-700/50">
-            I'm a passionate and detail-oriented software developer with
+            I&apos;m a passionate and detail-oriented software developer with
             hands-on experience in full-stack development, UI/UX design, and
             mobile application development. I enjoy creating efficient,
             scalable, and user-friendly applications using technologies like
@@ -165,10 +165,10 @@ export default function About() {
               I specialize in modern web technologies including React, Next.js,
               and TypeScript for frontend development. On the backend, I work
               with Node.js, Express, and various database solutions including
-              MongoDB and Firebase. I'm also proficient in mobile development
+              MongoDB and Firebase. I&apos;m also proficient in mobile development
               with React Native and Kotlin. My toolkit includes GSAP for
               animations, Tailwind CSS for styling, and Git for version control.
-              I'm constantly expanding my skillset to stay current with industry
+              I&apos;m constantly expanding my skillset to stay current with industry
               trends.
             </p>
 
@@ -213,12 +213,12 @@ export default function About() {
           </h1>
           {/* <div className="max-w-full p-8 mb-5 bg-gray-800/80 backdrop-blur-sm rounded-xl shadow-lg text-gray-200 border border-gray-700/50">
             <p className="font-medium pb-8">
-              I'm currently pursuing a Bachelor's degree in Computer Science at
-              Swinburne University, where I've developed a strong foundation in
+              I&apos;m currently pursuing a Bachelor&apos;s degree in Computer Science at
+              Swinburne University, where I&apos;ve developed a strong foundation in
               algorithms, data structures, software engineering principles, and
               modern development practices. My academic journey has equipped me
               with both theoretical knowledge and practical skills that I apply
-              to real-world projects. I'm particularly focused on web
+              to real-world projects. I&apos;m particularly focused on web
               technologies and interactive applications, maintaining a high GPA
               while actively participating in coding competitions and
               hackathons.
@@ -243,7 +243,7 @@ export default function About() {
           className="button bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 px-10 rounded-xl transform transition-all duration-300 hover:scale-105 shadow-lg flex items-center group"
           onClick={() => setActive("connect")}
         >
-          Let's Connect
+          Let&apos;s Connect
           <ArrowUpRight className="ml-2 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
         </button>
       </div>

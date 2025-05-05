@@ -1,22 +1,14 @@
 "use client";
 
-import React, { useState } from "react";
 import {
   HomeIcon,
   Share2Icon,
-  TrophyIcon,
-  SchoolIcon,
-  PaperclipIcon,
   VenetianMask,
   GitCompareArrowsIcon,
   DownloadIcon,
 } from "lucide-react";
 
-import Assest1 from "../assets/Asset 1.webp";
-import Image from "next/image";
-
 import {
-  ActiveSectionProvider,
   useActiveSectionContext,
 } from "../app/activeContext";
 
@@ -76,16 +68,16 @@ const NavItem: React.FC<NavItemProps> = ({
 };
 
 // Team item component
-const TeamItem: React.FC<TeamProps> = ({ label, initial }) => {
-  return (
-    <button className="flex items-center gap-3 w-full py-2 px-3 rounded-md transition-colors text-gray-400 hover:bg-gray-800 hover:text-white">
-      <div className="flex items-center justify-center w-6 h-6 rounded bg-gray-800 text-white text-xs font-medium">
-        {initial}
-      </div>
-      <span>{label}</span>
-    </button>
-  );
-};
+// const TeamItem: React.FC<TeamProps> = ({ label, initial }) => {
+//   return (
+//     <button className="flex items-center gap-3 w-full py-2 px-3 rounded-md transition-colors text-gray-400 hover:bg-gray-800 hover:text-white">
+//       <div className="flex items-center justify-center w-6 h-6 rounded bg-gray-800 text-white text-xs font-medium">
+//         {initial}
+//       </div>
+//       <span>{label}</span>
+//     </button>
+//   );
+// };
 
 // Main sidebar component
 const SidebarNavigation: React.FC<SidebarProps> = () => {

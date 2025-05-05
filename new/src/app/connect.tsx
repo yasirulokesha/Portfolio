@@ -7,23 +7,16 @@ import img from "@/assets/Asset 6.png";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import {
-  ArrowRightCircle,
-  ArrowUpRight,
-  Facebook,
   FacebookIcon,
   Github,
   Instagram,
   Linkedin,
-  Phone,
 } from "lucide-react";
-import { useActiveSectionContext } from "./activeContext";
-import Education from "./education";
 
 // Register GSAP plugins
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Contact() {
-  const { setActive } = useActiveSectionContext();
 
   const imageRef = useRef(null);
   const fNameRef = useRef(null);
@@ -42,11 +35,11 @@ export default function Contact() {
     { skill: "Tailwind/ Bootsrap/ MUI", progress: "90" },
   ];
 
-  const addSectionRef = (section: HTMLElement | null) => {
-    if (section && !sectionRef.current.includes(section)) {
-      sectionRef.current.push(section);
-    }
-  };
+//   const addSectionRef = (section: HTMLElement | null) => {
+//     if (section && !sectionRef.current.includes(section)) {
+//       sectionRef.current.push(section);
+//     }
+//   };
   // Initial animation on component mount
   useEffect(() => {
     // Initial entrance animation
@@ -77,7 +70,7 @@ export default function Contact() {
       }
     );
 
-    sectionRef.current.forEach((section, index) => {
+    sectionRef.current.forEach((section) => {
       tl.fromTo(
         section,
         { opacity: 0, y: -20 },
@@ -130,8 +123,8 @@ export default function Contact() {
             >
               <p className="my-4">
                 Feel free to get in touch with me for any collaborations,
-                questions, or opportunities. I'm always open to connecting and
-                exploring new ideas—let's build something great together!
+                questions, or opportunities. I&apos;m always open to connecting and
+                exploring new ideas—let&apos;s build something great together!
               </p>
               <h1 className="font-bold">Location : Melbourne, Australia</h1>
               <h1 className="font-bold">Mail : yasirulokesha01@gmail.com</h1>

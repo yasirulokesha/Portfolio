@@ -2,14 +2,13 @@
 
 import { useEffect, useRef } from "react";
 import Image from "next/image";
-import img from "@/assets/Asset 4.png";
+// import img from "@/assets/Asset 4.png";
 
 import RichmondCrest from "@/assets/richmond_crest.svg";
 import SwinburneCrest from "@/assets/swinburne_crest.svg";
 import GoogleLogo from "@/assets/google_logo.png";
 
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ArrowRightCircle, ArrowUpRight } from "lucide-react";
 import { useActiveSectionContext } from "./activeContext";
 
@@ -19,7 +18,6 @@ export default function Education() {
   const lNameRef = useRef(null);
   const taglineRef = useRef(null);
   const sectionRef = useRef(null);
-  const stepsRef = useRef<HTMLElement[]>(null);
 
   const { setActive } = useActiveSectionContext();
 
@@ -148,7 +146,7 @@ export default function Education() {
               Swinburne University of Technology
             </h1>
             <h1 className="max-w-100 text-wrap text-right hidden md:block">
-              Pursuing a Bachelor's Degree in Computer Science
+              Pursuing a Bachelor&apos;s Degree in Computer Science
             </h1>
           </div>
 
@@ -180,12 +178,12 @@ export default function Education() {
         </h1>
         <div className="max-w-full p-8 bg-gray-800/80 backdrop-blur-sm rounded-xl shadow-lg text-gray-200 border border-gray-700/50">
           <p className="font-medium pb-8">
-            I'm currently pursuing a Bachelor's degree in Computer Science at
-            Swinburne University, where I've developed a strong foundation in
+            I&apos;m currently pursuing a Bachelor&apos;s degree in Computer Science at
+            Swinburne University, where I&apos;ve developed a strong foundation in
             algorithms, data structures, software engineering principles, and
             modern development practices. My academic journey has equipped me
             with both theoretical knowledge and practical skills that I apply to
-            real-world projects. I'm particularly focused on web technologies
+            real-world projects. I&apos;m particularly focused on web technologies
             and interactive applications, maintaining a high GPA while actively
             participating in coding competitions and hackathons.
           </p>

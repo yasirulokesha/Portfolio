@@ -21,11 +21,7 @@ export const metadata: Metadata = {
   description: "Scroll down!",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout() {
   return (
     <html lang="en">
       <body

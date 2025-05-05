@@ -15,11 +15,9 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Home() {
   const { setActive } = useActiveSectionContext();
   // Create refs for animated elements
-  const contentRef = useRef(null);
   const imageRef = useRef(null);
   const fNameRef = useRef(null);
   const lNameRef = useRef(null);
-  const sectionRefs = useRef(null);
   const taglineRef = useRef(null);
 
   // Initial animation on component mount
@@ -102,7 +100,7 @@ export default function Home() {
             CS Undergrad @ Swinburne University
 
             <p className="max-w-100 text-balance my-4">
-              I'm a Computer Science student with expertise in
+              I&apos;m a Computer Science student with expertise in
               full-stack and mobile app development, software development.
               Skilled in ReactJS, Vue, and C/C#, he has built projects ranging
               from interactive dashboards to Android applications with
