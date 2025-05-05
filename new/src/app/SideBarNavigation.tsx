@@ -21,11 +21,11 @@ type NavItemProps = {
   onClick?: () => void;
 };
 
-type TeamProps = {
-  id: string;
-  label: string;
-  initial: string;
-};
+// type TeamProps = {
+//   id: string;
+//   label: string;
+//   initial: string;
+// };
 
 type SidebarProps = {
   userName?: string;
@@ -105,11 +105,11 @@ const SidebarNavigation: React.FC<SidebarProps> = () => {
   ];
 
   // Teams data
-  const teams = [
-    { id: "heroicons", label: "NextJS", initial: "H" },
-    { id: "tailwind", label: "Tailwind Labs", initial: "T" },
-    { id: "workcation", label: "Software", initial: "W" },
-  ];
+  // const teams = [
+  //   { id: "heroicons", label: "NextJS", initial: "H" },
+  //   { id: "tailwind", label: "Tailwind Labs", initial: "T" },
+  //   { id: "workcation", label: "Software", initial: "W" },
+  // ];
 
   return (
     <div

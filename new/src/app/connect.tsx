@@ -24,17 +24,6 @@ export default function Contact() {
   const taglineRef = useRef(null);
   const sectionRef = useRef<HTMLElement[]>([]);
 
-  const skillSet = [
-    { skill: "C/ C#", progress: "90" },
-    { skill: "NextJS/ ReactJS", progress: "80" },
-    { skill: "Android/ Kotlin", progress: "80" },
-    { skill: "Firebase", progress: "70" },
-    { skill: "AWS/ Azure", progress: "60" },
-    { skill: "Python", progress: "80" },
-    { skill: "Vue", progress: "70" },
-    { skill: "Tailwind/ Bootsrap/ MUI", progress: "90" },
-  ];
-
 //   const addSectionRef = (section: HTMLElement | null) => {
 //     if (section && !sectionRef.current.includes(section)) {
 //       sectionRef.current.push(section);
