@@ -28,8 +28,8 @@ export default function RootLayout() {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ActiveSectionProvider>
-          <div className="flex flex-col lg:flex-row lg:h-screen m-auto lg:w-screen">
-            <div className="p-4 flex lg:p-0">
+          <div className=" flex flex-col lg:flex-row lg:h-screen m-auto lg:w-screen">
+            <div className="p-4 flex lg:p-0 ">
               <SidebarNavigation />
             </div>
             {/* <App/> */}

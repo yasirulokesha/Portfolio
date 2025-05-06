@@ -109,6 +109,9 @@ export default function Home() {
             <button
               type="button"
               className="button max-w-50 flex align-middle items-center justify-center bg-transparent outline outline-offset-2 hover:bg-gray-600 text-white font-semibold text-[12pt] py-2 px-6 my-4 rounded-md transform transition-all duration-300 shadow-lg"
+              onClick={() => {
+                window.open("https://github.com/yasirulokesha/Portfolio/tree/main/new","_blank", "noopener,noreferrer")
+              }}
             >
               Portfolio Code
               <ArrowUpRight />
@@ -130,7 +133,7 @@ export default function Home() {
       </div>
 
       {/* CTA Button */}
-      <div className="flex justify-center flex-row">
+      <div className="flex justify-center flex-row mt-4">
         <button
           type="button"
           className="button bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 px-10 rounded-xl transform transition-all duration-300 hover:scale-105 shadow-lg flex items-center group"

@@ -6,22 +6,14 @@ import img from "@/assets/Asset 5.png";
 
 import gsap from "gsap";
 import { ArrowUpRight, GithubIcon } from "lucide-react";
-// import { useActiveSectionContext } from "./activeContext";
 
 export default function Projects() {
-//   const { setActive } = useActiveSectionContext();
 
   const imageRef = useRef(null);
   const fNameRef = useRef(null);
   const lNameRef = useRef(null);
   const taglineRef = useRef(null);
   const sectionRef = useRef<HTMLElement[]>([]);
-
-//   const addSectionRef = (section: HTMLElement | null) => {
-//     if (section && !sectionRef.current.includes(section)) {
-//       sectionRef.current.push(section);
-//     }
-//   };
 
   const project_list = [
     {
@@ -187,7 +179,7 @@ export default function Projects() {
           return (
             <div
               key={index}
-              className="flex flex-col  bg-gray-800/80 round-xl max-h-100 h-100 w-80 max-w-80 rounded-xl outline-gray-700 outline-1 p-4 hover:scale-105 duration-300 "
+              className="flex flex-col md:m-0 m-auto bg-gray-800/80 round-xl max-h-100 h-100 w-80 max-w-80 rounded-xl outline-gray-700 outline-1 p-4 hover:scale-105 duration-300 "
             >
               {project.preview != "none" ? (
                 <img
@@ -226,7 +218,7 @@ export default function Projects() {
         })}
       </div>
 
-      <div className="flex justify-center flex-row">
+      <div className="flex justify-center flex-row mt-8">
         <button
           type="button"
           className="button bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 px-10 rounded-xl transform transition-all duration-300 hover:scale-105 shadow-lg flex items-center group"

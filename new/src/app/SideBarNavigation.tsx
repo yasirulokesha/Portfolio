@@ -8,9 +8,7 @@ import {
   DownloadIcon,
 } from "lucide-react";
 
-import {
-  useActiveSectionContext,
-} from "../app/activeContext";
+import { useActiveSectionContext } from "../app/activeContext";
 
 // Type definitions
 type NavItemProps = {
@@ -156,12 +154,13 @@ const SidebarNavigation: React.FC<SidebarProps> = () => {
 
       {/* User Profile */}
       <div className="md:flex p-4 border-t border-gray-800 hidden">
-        <div className="md:flex items-center w-full gap-3 text-left hidden">
-          <NavItem
-            icon={<DownloadIcon size={20} />}
-            label="Download Resume"
-            onClick={() => {}}
-          />
+        <div className="md:flex items-center justify-center w-full gap-3 text-left hidden">
+          <a href="/Resume.pdf" download>
+            <NavItem
+              icon={<DownloadIcon size={20} />}
+              label="Download Resume"
+            />
+          </a>
         </div>
       </div>
     </div>
