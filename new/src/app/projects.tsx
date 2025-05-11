@@ -72,8 +72,10 @@ export default function Projects() {
     },
   ];
 
-  const add_sections = (el: any) => {
-    sectionRef.current.push(el);
+  const add_sections = (el: HTMLElement | null) => {
+    if (el) {
+      sectionRef.current.push(el);
+    }
   };
 
   // Initial animation on component mount
