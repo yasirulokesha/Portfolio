@@ -82,13 +82,13 @@ export default function Home() {
         <div className="flex flex-col flex-wrap ">
           <h1
             ref={fNameRef}
-            className="text-6xl md:text-9xl font-black text-gray-100 font-serif"
+            className="text-6xl md:text-8xl font-black text-gray-100 font-serif"
           >
             YASIRU
           </h1>
           <h1
             ref={lNameRef}
-            className="text-6xl md:text-5xl -mt-5 font-light text-blue-500 font-serif"
+            className="text-5xl md:text-4xl -mt-5 font-light text-blue-500 font-serif"
           >
             Lokesha
           </h1>

@@ -106,10 +106,10 @@ export default function Education() {
           <div className="flex flex-col mr-0 -translate-x-25 items-end justify-center">
             <Image src={RichmondCrest} className="w-15" alt="crest 1" />
             <h1 className="text-sm font-semibold">2008 - 2021</h1>
-            <h1 className="font-bold text-xl hidden md:block">
+            <h1 className="font-bold text-lg hidden sm:block">
               Richmond College
             </h1>
-            <p className="max-w-100 text-balance text-right hidden md:block">
+            <p className="sm:w-100 hidden text-balance text-right text-sm font-semibold text-gray-400 pl-50 sm:block">
               Best ICT Performer in 2019 of the college.<br/>
               Conducted an event 2020 (KNGINE 21)
             </p>
@@ -129,10 +129,10 @@ export default function Education() {
           <div className="flex flex-col mr-0 translate-x-25 items-start">
             <Image src={SwinburneCrest} className="w-20 my-3" alt="crest 1" />
             <h1 className="text-sm font-semibold">2022</h1>
-            <h1 className="font-bold text-xl hidden md:block">
+            <h1 className="font-bold text-lg hidden sm:block w-50">
               Swinburne University of Technology
             </h1>
-            <h1 className="max-w-100 text-wrap text-left hidden md:block">
+            <h1 className="max-w-100 text-balance text-left text-sm font-semibold text-gray-400 pr-50 sm:block hidden">
               Acomplished a Diploma in IT
             </h1>
           </div>
@@ -141,18 +141,18 @@ export default function Education() {
         <div className="absolute flex justify-end items-center translate-y-5 -translate-x-50 w-100 h-fit">
           <div className="flex flex-col mr-0 -translate-x-25 items-end">
             <Image src={SwinburneCrest} className="w-20 my-3" alt="crest 1" />
-            <h1 className="text-sm font-semibold">20022 - 2025</h1>
-            <h1 className="font-bold text-xl hidden md:block">
+            <h1 className="text-sm font-semibold">2022 - 2025</h1>
+            <h1 className="font-bold text-lg hidden text-right sm:block w-50">
               Swinburne University of Technology
             </h1>
-            <h1 className="max-w-100 text-wrap text-right hidden md:block">
+            <h1 className="max-w-100 text-balance text-right text-sm font-semibold text-gray-400 pl-50 sm:block hidden">
               Pursuing a Bachelor&apos;s Degree in Computer Science
             </h1>
           </div>
 
           <span className="absolute right-0 block h-3 w-20 bg-gray-700 rounded-full ">
             <span className="absolute rounded-full bg-blue-500 w-7 h-7 -translate-y-2"></span>
-            <span className="absolute rounded-full w-8 h-8 -translate-y-[10px] -translate-x-[2px]  outline-3 outline-blue-800 hover:outline-8 duration-200 animate-ping"></span>
+            <span className="absolute rounded-full w-8 h-8 -translate-y-[10px] -translate-x-[2px] outline-3 outline-blue-800 hover:outline-8 duration-200 animate-ping"></span>
           </span>
         </div>
 
@@ -164,8 +164,8 @@ export default function Education() {
           <div className="flex flex-col mr-0 translate-x-25 items-start">
             <Image src={GoogleLogo} className="w-15 -ml-2" alt="crest 1" />
             <h1 className="text-sm font-semibold">2025</h1>
-            <h1 className="font-bold text-xl">Google</h1>
-            <h1 className="max-w-100 text-wrap text-left hidden md:block">
+            <h1 className="font-bold text-lg">Google</h1>
+            <h1 className="max-w-100 text-balance text-left text-sm font-semibold text-gray-400 pr-50 sm:block hidden">
               Following a Technical Support Course
             </h1>
           </div>

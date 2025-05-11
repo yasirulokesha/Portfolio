@@ -8,7 +8,6 @@ import gsap from "gsap";
 import { ArrowUpRight, GithubIcon } from "lucide-react";
 
 export default function Projects() {
-
   const imageRef = useRef(null);
   const fNameRef = useRef(null);
   const lNameRef = useRef(null);
@@ -28,7 +27,8 @@ export default function Projects() {
       project_name: "Job Vacancy Posting",
       tools: "PHP",
       preview: "none",
-      description: "Job vacancies, posting system in php",
+      description:
+        "A dynamic web application built with PHP that allows employers to post job vacancies and job seekers to browse and apply for available positions.",
       link: "https://github.com/yasirulokesha/Job-Vacancy-Posting-System.git",
     },
     {
@@ -44,7 +44,7 @@ export default function Projects() {
       tools: "ReacJS | MUI",
       preview: "none",
       description: "",
-      link: "https://github.com/yasirulokesha/kilan_powder_coatings .git",
+      link: "https://github.com/yasirulokesha/kilan_powder_coatings.git",
     },
     {
       project_name: "NFT Trading Platform Prototype",
@@ -52,7 +52,7 @@ export default function Projects() {
       preview: "none",
       description:
         "It is a prototype for NFT trading platform. The site is trying to achieve, every functional requirements of a trading platform.",
-      link: "https://github.com/yasirulokesha/kilan_powder_coatings.git",
+      link: "https://github.com/yasirulokesha/NFT-Trading-platform.git",
     },
     {
       project_name: "TripLocate",
@@ -71,6 +71,10 @@ export default function Projects() {
       link: "https://github.com/yasirulokesha/IntroToAI-Assignment-2.git",
     },
   ];
+
+  const add_sections = (el: any) => {
+    sectionRef.current.push(el);
+  };
 
   // Initial animation on component mount
   useEffect(() => {
@@ -109,8 +113,8 @@ export default function Projects() {
         {
           opacity: 1,
           y: 0,
-          duration: 0.2,
-          ease: "sine",
+          duration: 0.1,
+          ease: "power4.in",
         }
       );
     });
@@ -167,7 +171,11 @@ export default function Projects() {
             </div>
           </div>
           <div ref={imageRef} className="flex">
-            <Image src={img} alt="img" className="md:max-w-150 w-100 absolute z-10" />
+            <Image
+              src={img}
+              alt="img"
+              className="md:max-w-150 w-100 absolute z-10"
+            />
             <div className="flex -inset-4 bg-blue-500/20 rounded-full blur-3xl animate-pulse">
               <Image src={img} alt="img" className="md:max-w-150 w-100" />
             </div>
@@ -178,6 +186,7 @@ export default function Projects() {
         {project_list.map((project, index) => {
           return (
             <div
+              ref={add_sections}
               key={index}
               className="flex flex-col md:m-0 m-auto bg-gray-800/80 round-xl max-h-100 h-100 w-80 max-w-80 rounded-xl outline-gray-700 outline-1 p-4 hover:scale-105 duration-300 "
             >
@@ -197,7 +206,7 @@ export default function Projects() {
                   {project.project_name}
                 </h1>
                 <h5 className="text-sm font-semibold "> {project.tools}</h5>
-                <p className="max-w-full font-medium py-2">
+                <p className="max-w-full text-sm font-medium text-gray-200 py-2">
                   {project.description}
                 </p>
               </div>
@@ -223,10 +232,14 @@ export default function Projects() {
           type="button"
           className="button bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 px-10 rounded-xl transform transition-all duration-300 hover:scale-105 shadow-lg flex items-center group"
           onClick={() => {
-            window.open("https://github.com/yasirulokesha", "_blank", "noopener,noreferrer");
+            window.open(
+              "https://github.com/yasirulokesha",
+              "_blank",
+              "noopener,noreferrer"
+            );
           }}
         >
-            Explore more
+          Explore more
           <ArrowUpRight className="ml-2 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
         </button>
       </div>

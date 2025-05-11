@@ -111,7 +111,7 @@ const SidebarNavigation: React.FC<SidebarProps> = () => {
 
   return (
     <div
-      className={`fixed translate-x-3 z-10 md:relative flex md:flex-col flex-row max-h-200 h-fit lg:min-h-150 rounded-xl align-middle mt-auto lg:ml-10 mb-auto lg:w-64 md:w-full w-fit m-auto bg-gray-950 backdrop-blur-3xl`}
+      className={`fixed translate-x-3 sm:translate-x-0 z-10 md:relative flex md:flex-col flex-row max-h-200 h-fit lg:min-h-150 rounded-xl align-middle lg:ml-10 mb-auto lg:w-64 md:w-full w-fit m-auto bg-gray-950 backdrop-blur-3xl`}
     >
       <div className="md:flex hidden flex-col gap-4 items-center p-4 m-auto">
         {/* <Image src={Assest1} className="w-25 h-25 rounded-md" alt="image_1" /> */}
