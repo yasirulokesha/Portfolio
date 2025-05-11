@@ -155,7 +155,7 @@ const SidebarNavigation: React.FC<SidebarProps> = () => {
       {/* User Profile */}
       <div className="md:flex p-4 border-t border-gray-800 hidden">
         <div className="md:flex items-center justify-center w-full gap-3 text-left hidden">
-          <a href="/Resume.pdf" download>
+          <a href="/Yasiru Lokesha - Resume.pdf" download>
             <NavItem
               icon={<DownloadIcon size={20} />}
               label="Download Resume"
