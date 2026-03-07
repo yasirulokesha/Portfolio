@@ -33,7 +33,7 @@ export default function Home() {
         x: 0,
         duration: 1,
         ease: "elastic",
-      }
+      },
     );
 
     tl.fromTo(
@@ -47,7 +47,7 @@ export default function Home() {
         scale: 1,
         ease: "power2.out",
       },
-      "-=0.4"
+      "-=0.4",
     );
 
     tl.fromTo(
@@ -57,17 +57,18 @@ export default function Home() {
         rotate: 2,
         duration: 0.5,
         ease: "power2.out",
-      }
+      },
     );
 
     tl.fromTo(
       imageRef.current,
-      { rotate: 0 },
+      { rotate: -2, scale: 1.05 },
       {
-        rotate: -2,
+        rotate: 0,
+        scale: 1,
         duration: 0.5,
         ease: "power2.out",
-      }
+      },
     );
 
     return () => {
@@ -97,20 +98,21 @@ export default function Home() {
             className="mt-4 text-xl font-medium text-gray-300"
           >
             <span className="font-bold">Tech Explorer 🚀</span> <br />
-            CS Undergrad @ Swinburne University
-
+            BA-CS @ Swinburne 🎓 <br />
             <p className="max-w-100 text-balance my-4">
-              I&apos;m a Computer Science student with expertise in
-              full-stack and mobile app development, software development.
-              Skilled in ReactJS, Vue, and C/C#, he has built projects ranging
-              from interactive dashboards to Android applications with
-              animations and graphics.{" "}
+              Computer Science graduate specializing in Software Development.
+              Focused on creating responsive, user-friendly, and engaging web
+              experiences.{" "}
             </p>
             <button
               type="button"
               className="button max-w-50 flex align-middle items-center justify-center bg-transparent outline outline-offset-2 hover:bg-gray-600 text-white font-semibold text-[12pt] py-2 px-6 my-4 rounded-md transform transition-all duration-300 shadow-lg"
               onClick={() => {
-                window.open("https://github.com/yasirulokesha/Portfolio/tree/main/new","_blank", "noopener,noreferrer")
+                window.open(
+                  "https://github.com/yasirulokesha/Portfolio/tree/main/new",
+                  "_blank",
+                  "noopener,noreferrer",
+                );
               }}
             >
               Portfolio Code

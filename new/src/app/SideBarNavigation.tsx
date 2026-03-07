@@ -90,15 +90,8 @@ const SidebarNavigation: React.FC<SidebarProps> = () => {
       id: "projects",
       icon: <GitCompareArrowsIcon size={20} />,
       label: "Projects",
-      badge: "7+",
+      badge: "7",
     },
-    // {
-    //   id: "badges",
-    //   icon: <TrophyIcon size={20} />,
-    //   label: "Badges",
-    //   badge: "20+",
-    // },
-    // { id: "education", icon: <SchoolIcon size={20} />, label: "Education" },
     { id: "contact", icon: <Share2Icon size={20} />, label: "Connect" },
   ];
 

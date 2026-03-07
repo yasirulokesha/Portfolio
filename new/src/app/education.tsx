@@ -35,7 +35,7 @@ export default function Education() {
         stagger: 0.2,
         scale: 1,
         ease: "power2.out",
-      }
+      },
     );
 
     tl.fromTo(
@@ -47,7 +47,7 @@ export default function Education() {
         duration: 0.6,
         ease: "elastic.out(1, 0.4)",
         delay: 0,
-      }
+      },
     );
     tl.fromTo(
       sectionRef,
@@ -57,7 +57,7 @@ export default function Education() {
         y: 0,
         duration: 0.2,
         ease: "sine",
-      }
+      },
     );
 
     if (lNameRef.current) {
@@ -68,7 +68,7 @@ export default function Education() {
           rotate: 2,
           duration: 0.5,
           ease: "power2.out",
-        }
+        },
       );
     }
 
@@ -110,7 +110,8 @@ export default function Education() {
               Richmond College
             </h1>
             <p className="sm:w-100 hidden text-balance text-right text-sm font-semibold text-gray-400 pl-50 sm:block">
-              Best ICT Performer in 2019 of the college.<br/>
+              Best ICT Performer in 2019 of the college.
+              <br />
               Conducted an event 2020 (KNGINE 21)
             </p>
           </div>
@@ -146,7 +147,7 @@ export default function Education() {
               Swinburne University of Technology
             </h1>
             <h1 className="max-w-100 text-balance text-right text-sm font-semibold text-gray-400 pl-50 sm:block hidden">
-              Pursuing a Bachelor&apos;s Degree in Computer Science
+              Awarded in BA-CS
             </h1>
           </div>
 
@@ -166,7 +167,7 @@ export default function Education() {
             <h1 className="text-sm font-semibold">2025</h1>
             <h1 className="font-bold text-lg">Google</h1>
             <h1 className="max-w-100 text-balance text-left text-sm font-semibold text-gray-400 pr-50 sm:block hidden">
-              Following a Technical Support Course
+              Followed a Technical Support Course
             </h1>
           </div>
         </div>
@@ -178,14 +179,11 @@ export default function Education() {
         </h1>
         <div className="max-w-full p-8 bg-gray-800/80 backdrop-blur-sm rounded-xl shadow-lg text-gray-200 border border-gray-700/50">
           <p className="font-medium pb-8">
-            I&apos;m currently pursuing a Bachelor&apos;s degree in Computer Science at
-            Swinburne University, where I&apos;ve developed a strong foundation in
-            algorithms, data structures, software engineering principles, and
-            modern development practices. My academic journey has equipped me
-            with both theoretical knowledge and practical skills that I apply to
-            real-world projects. I&apos;m particularly focused on web technologies
-            and interactive applications, maintaining a high GPA while actively
-            participating in coding competitions and hackathons.
+            My skills include translating designs into clean, structured code,
+            developing reusable UI components, and ensuring usability across
+            different devices and browsers. I&apos;m comfortable learning new tools
+            and continuously refining my approach to improve performance,
+            accessibility, and overall user experience.
           </p>
           <button
             type="button"

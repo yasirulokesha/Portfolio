@@ -23,14 +23,14 @@ export default function About() {
   const sectionRef = useRef<HTMLElement[]>([]);
 
   const skillSet = [
-    { skill: "C/ C#", progress: "90" },
-    { skill: "NextJS/ ReactJS", progress: "80" },
+    { skill: "C/ C#", progress: "80" },
+    { skill: "NextJS/ ReactJS", progress: "90" },
     { skill: "Android/ Kotlin", progress: "80" },
-    { skill: "Firebase", progress: "70" },
+    { skill: "Firebase", progress: "75" },
     { skill: "AWS/ Azure", progress: "60" },
     { skill: "Python", progress: "80" },
     { skill: "Vue", progress: "70" },
-    { skill: "Tailwind/ Bootsrap/ MUI", progress: "90" },
+    { skill: "Tailwind/ Bootstrap", progress: "90" },
   ];
 
   const addSectionRef = (section: HTMLElement | null) => {
@@ -53,7 +53,7 @@ export default function About() {
         stagger: 0.2,
         scale: 1,
         ease: "power2.out",
-      }
+      },
     );
 
     tl.fromTo(
@@ -65,7 +65,7 @@ export default function About() {
         duration: 0.4,
         ease: "elastic.out(1, 0.4)",
         delay: 0,
-      }
+      },
     );
 
     sectionRef.current.forEach((section) => {
@@ -77,7 +77,7 @@ export default function About() {
           y: 0,
           duration: 0.2,
           ease: "sine",
-        }
+        },
       );
     });
 
@@ -89,7 +89,7 @@ export default function About() {
           rotate: 2,
           duration: 0.5,
           ease: "power2.out",
-        }
+        },
       );
     }
 
@@ -120,8 +120,8 @@ export default function About() {
               className=" text-xl font-medium text-gray-300 max-w-md"
             >
               <p>
-                Passionate developer creating intuitive digital experiences with
-                clean code and creative solutions.
+                Focused on creating responsive, user-friendly, and engaging web
+                experiences.{" "}
               </p>
             </div>
           </div>
@@ -142,15 +142,12 @@ export default function About() {
             <ArrowUpRight className="ml-2 text-blue-400" size={24} />
           </h1>
           <p className="max-w-full font-medium p-8 bg-gray-800/80 backdrop-blur-sm rounded-xl shadow-lg text-gray-200 border border-gray-700/50">
-            I&apos;m a passionate and detail-oriented software developer with
-            hands-on experience in full-stack development, UI/UX design, and
-            mobile application development. I enjoy creating efficient,
-            scalable, and user-friendly applications using technologies like
-            React, Next.js, Firebase, and Kotlin. I have also worked on
-            real-time dashboards, cloud-based systems, and cross-platform apps,
-            focusing on clean code and great user experiences. I thrive in
-            collaborative environments and continuously seek opportunities to
-            learn and grow as a developer.
+            I&apos;m a Computer Science graduate with a focus on Software
+            Development. I enjoy building responsive web applications and
+            creating interactive user interfaces using modern frontend tools and
+            frameworks. I&apos;m a fast learner with strong problem-solving
+            skills and a strong interest in designing intuitive, accessible, and
+            engaging digital experiences.
           </p>
         </div>
 
@@ -162,14 +159,9 @@ export default function About() {
           </h1>
           <div className="max-w-full p-8 bg-gray-800/80 backdrop-blur-sm rounded-xl shadow-lg text-gray-200 border border-gray-700/50">
             <p className="font-medium pb-8">
-              I specialize in modern web technologies including React, Next.js,
-              and TypeScript for frontend development. On the backend, I work
-              with Node.js, Express, and various database solutions including
-              MongoDB and Firebase. I&apos;m also proficient in mobile development
-              with React Native and Kotlin. My toolkit includes GSAP for
-              animations, Tailwind CSS for styling, and Git for version control.
-              I&apos;m constantly expanding my skillset to stay current with industry
-              trends.
+              I build responsive web interfaces with attention to usability and
+              detail. I&apos;m always learning, experimenting, and refining my
+              skills through hands-on development.
             </p>
 
             <div className="block columns-2 gap-10 grid-rows-4 w-full">
