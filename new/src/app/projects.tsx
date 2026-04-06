@@ -6,6 +6,7 @@ import img from "@/assets/Asset 5.png";
 
 import gsap from "gsap";
 import { ArrowUpRight, GithubIcon } from "lucide-react";
+import link from "next/dist/client/link";
 
 export default function Projects() {
   const imageRef = useRef(null);
@@ -15,6 +16,14 @@ export default function Projects() {
   const sectionRef = useRef<HTMLElement[]>([]);
 
   const project_list = [
+    {
+      project_name: "TRAFFIC-BASED ROUTE GUIDANCE SYSTEM",
+      tools: "Python | Jupyter Notebook",
+      preview: "/projects/tbrgs.png",
+      description:
+        "Integrate ML with graph-based algorithms for forecasting traffic and identifying efficient travel paths.",
+      link: "https://github.com/yasirulokesha/Traffic-Based_route_guidance_system",
+    },
     {
       project_name: "Medi Plus",
       tools: "ReactJs | BS5",
@@ -36,15 +45,8 @@ export default function Projects() {
       tools: "C#",
       preview: "none",
       description:
-        "A system for getting reservations/ make orders/ invoicing and etc. The system prototype will help to manage a resturant.",
+        "A POS system for getting reservations/ make orders/ invoicing and etc. The system prototype will help to manage a resturant.",
       link: "https://github.com/yasirulokesha/Relaxing_koala.git",
-    },
-    {
-      project_name: "kilan Powder Coatings",
-      tools: "ReacJS | MUI",
-      preview: "none",
-      description: "",
-      link: "https://github.com/yasirulokesha/kilan_powder_coatings.git",
     },
     {
       project_name: "NFT Trading Platform Prototype",
