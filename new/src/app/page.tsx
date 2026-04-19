@@ -1,6 +1,9 @@
 "use client";
 
-import { useActiveSectionContext } from "./activeContext";
+import {
+  ActiveSectionProvider,
+  useActiveSectionContext,
+} from "./activeContext";
 import Home from "./home";
 import About from "./about";
 import Resume from "./resume";
@@ -8,8 +11,25 @@ import Education from "./education";
 import Projects from "./projects";
 import Contact from "./connect";
 import { useEffect, useRef } from "react";
+import SidebarNavigation from "./SideBarNavigation";
 
-function App() {
+export default function App() {
+  return (
+    <ActiveSectionProvider>
+      <div className="flex flex-col lg:flex-row lg:h-screen m-auto lg:w-screen">
+        <div className="p-4 flex lg:p-0">
+          <SidebarNavigation />
+        </div>
+
+        <main className="flex-1 p-4 lg:p-8">
+          <Content />
+        </main>
+      </div>
+    </ActiveSectionProvider>
+  );
+}
+
+function Content() {
   const { active } = useActiveSectionContext();
   const scrollRef = useRef<HTMLDivElement>(null);
 
@@ -43,5 +63,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

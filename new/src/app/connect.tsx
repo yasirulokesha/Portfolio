@@ -115,7 +115,7 @@ export default function Contact() {
                 questions, or opportunities. I&apos;m always open to connecting and
                 exploring new ideas—let&apos;s build something great together!
               </p>
-              <h1 className="font-bold">Location : Melbourne, Australia</h1>
+              <h1 className="font-bold">Location : Sri Lanka</h1>
               <h1 className="font-bold">Mail : yasirulokesha01@gmail.com</h1>
 
               <div className="flex gap-4 mt-4">
