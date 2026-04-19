@@ -1,5 +1,5 @@
 "use client";
-// google imgen API key - cfut_msYWe7qtR3RQCLlDR7h7z027MmZ2ay8IghOQBlY55a3e92c3
+
 import { useEffect, useRef } from "react";
 import Image from "next/image";
 import Photo2 from "../assets/Assest2.jpeg";
