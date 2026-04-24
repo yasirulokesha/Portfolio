@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Photo2 from "../assets/Assest2.jpeg";
 
@@ -19,6 +19,37 @@ export default function Home() {
   const fNameRef = useRef(null);
   const lNameRef = useRef(null);
   const taglineRef = useRef(null);
+  const [genImg1, setGenImg1] = useState<string | null>(null);
+  const [genImg2, setGenImg2] = useState<string | null>(null);
+  const [genImg3, setGenImg3] = useState<string | null>(null);
+
+  const generateImage = async (
+    prompt: string | null,
+  ): Promise<string | null> => {
+    try {
+      const response = await fetch("/api/generate", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          prompt: prompt || "a beautifull sri lankan landscape, digital art",
+        }),
+      });
+
+      if (!response.ok) {
+        throw Error("Failed to generate image");
+      }
+      const blob = await response.blob();
+      const imageUrl = URL.createObjectURL(blob);
+      console.log("Generated image URL:", imageUrl);
+      // setGenImg1(imageUrl);
+      return imageUrl;
+    } catch (error) {
+      console.error("Error generating image:", error);
+      return null;
+    }
+  };
 
   // Initial animation on component mount
   useEffect(() => {
@@ -70,6 +101,19 @@ export default function Home() {
         ease: "power2.out",
       },
     );
+
+    const loadGeneratedImage = async () => {
+      const imageUrl1 = await generateImage(
+        "a beautiful landscape, digital art",
+      );
+      const imageUrl2 = await generateImage("Sri lankan iconic landmarks");
+      const imageUrl3 = await generateImage("a peaceful forest, digital art");
+      setGenImg1(imageUrl1);
+      setGenImg2(imageUrl2);
+      setGenImg3(imageUrl3);
+    };
+
+    loadGeneratedImage();
 
     return () => {
       tl.kill();
@@ -124,12 +168,92 @@ export default function Home() {
           <div className="relative w-64 md:w-80 lg:w-96 mx-auto md:mx-0 md:ml-auto">
             {/* <div className="absolute -inset-4 bg-blue-500/20 rounded-full blur-3xl animate-ping transition-all duration-1000"></div> */}
             <div className="absolute -inset-4 bg-blue-500/20 rounded-full blur-3xl "></div>
-            <Image
-              src={Photo2}
-              alt="Yasiru Lokesha"
-              className="rounded-2xl shadow-2xl z-10 relative"
-              priority
-            />
+            {genImg1 ? (
+              <img
+                src={
+                  genImg1 ||
+                  "https://blocks.astratic.com/img/general-img-landscape.png"
+                }
+                alt="Generated Image"
+                width={128}
+                height={128}
+                className="rounded-full shadow-2xl z-10 top-10 animate-pulse transition-all duration-3000"
+              />
+            ):(
+              <img
+                src={
+                  "https://blocks.astratic.com/img/general-img-landscape.png"
+                }
+                alt="Generated Image"
+                width={128}
+                height={128}
+                className="rounded-full shadow-2xl z-10 overflow-hidden h-30 w-30  top-10 animate-pulse transition-all duration-3000"
+              />
+            )}
+
+            {genImg2 ? (
+              <img
+                src={
+                  genImg2 ||
+                  "https://blocks.astratic.com/img/general-img-landscape.png"
+                }
+                alt="Generated Image"
+                width={256}
+                height={256}
+                className="rounded-full shadow-2xl z-10  top-10 animate-fadeIn"
+              />
+            ):(
+              <img
+                src={
+                  "https://blocks.astratic.com/img/general-img-landscape.png"
+                }
+                alt="Generated Image"
+                width={256}
+                height={256}
+                className="rounded-full shadow-2xl z-10 overflow-hidden h-55 w-55 animate-pulse top-10 animate-fadeIn"
+              />
+            )}
+            {(genImg1 && genImg2 && genImg3) ? (
+              <Image
+                src={Photo2}
+                alt="Yasiru Lokesha"
+                className="rounded-full overflow-hidden h-55 w-55 absolute object-cover shadow-2xl -z-1 top-10 right-0 animate-fadeIn"
+                priority
+              />
+            ):(
+              <img
+                src={
+                  "https://blocks.astratic.com/img/general-img-landscape.png"
+                }
+                alt="Generated Image"
+                width={256}
+                height={256}
+                className="rounded-full overflow-hidden h-55 w-55 absolute object-cover shadow-2xl -z-1 top-10 right-0 animate-fadeIn"
+              />
+            )}
+
+            {genImg3 ? (
+              <img
+                src={
+                  genImg3 ||
+                  "https://blocks.astratic.com/img/general-img-landscape.png"
+                }
+                alt="Generated Image"
+                width={128}
+                height={128}
+                className="rounded-full shadow-2xl overflow-hidden h-55 w-55 absolute object-cover translate-x-full animate-pulse transition-all duration-3000"
+              />
+            ):(
+              <img
+                src={
+                  "https://blocks.astratic.com/img/general-img-landscape.png"
+                }
+                alt="Generated Image"
+                width={128}
+                height={128}
+                className="rounded-full shadow-2xl overflow-hidden h-30 w-30 translate-x-full animate-pulse transition-all duration-3000"
+              />
+            )}
           </div>
         </div>
       </div>
