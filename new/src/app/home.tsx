@@ -177,14 +177,14 @@ export default function Home() {
                 alt="Generated Image"
                 width={128}
                 height={128}
-                className="rounded-full shadow-2xl z-10 top-10 animate-pulse transition-all duration-3000"
+                className="rounded-full shadow-2xl z-10 top-10"
               />
             ):(
               <img
                 src={
                   "https://blocks.astratic.com/img/general-img-landscape.png"
                 }
-                alt="Generated Image"
+                alt="Generating Image"
                 width={128}
                 height={128}
                 className="rounded-full shadow-2xl z-10 overflow-hidden h-30 w-30  top-10 animate-pulse transition-all duration-3000"
@@ -225,7 +225,7 @@ export default function Home() {
                 src={
                   "https://blocks.astratic.com/img/general-img-landscape.png"
                 }
-                alt="Generated Image"
+                alt="Generating Image"
                 width={256}
                 height={256}
                 className="rounded-full overflow-hidden h-55 w-55 absolute object-cover shadow-2xl -z-1 top-10 right-0 animate-fadeIn"
@@ -241,14 +241,14 @@ export default function Home() {
                 alt="Generated Image"
                 width={128}
                 height={128}
-                className="rounded-full shadow-2xl overflow-hidden h-55 w-55 absolute object-cover translate-x-full animate-pulse transition-all duration-3000"
+                className="rounded-full shadow-2xl overflow-hidden h-30 w-30 object-cover translate-x-full "
               />
             ):(
               <img
                 src={
                   "https://blocks.astratic.com/img/general-img-landscape.png"
                 }
-                alt="Generated Image"
+                alt="Generating Image"
                 width={128}
                 height={128}
                 className="rounded-full shadow-2xl overflow-hidden h-30 w-30 translate-x-full animate-pulse transition-all duration-3000"
