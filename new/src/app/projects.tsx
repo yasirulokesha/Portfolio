@@ -95,7 +95,7 @@ export default function Projects() {
         stagger: 0.2,
         scale: 1,
         ease: "power2.out",
-      }
+      },
     );
 
     tl.fromTo(
@@ -107,7 +107,7 @@ export default function Projects() {
         duration: 0.4,
         ease: "elastic.out(1, 0.4)",
         delay: 0,
-      }
+      },
     );
 
     sectionRef.current.forEach((section) => {
@@ -119,7 +119,7 @@ export default function Projects() {
           y: 0,
           duration: 0.1,
           ease: "power4.in",
-        }
+        },
       );
     });
 
@@ -131,7 +131,7 @@ export default function Projects() {
           rotate: 2,
           duration: 0.5,
           ease: "power2.out",
-        }
+        },
       );
     }
 
@@ -142,8 +142,8 @@ export default function Projects() {
 
   return (
     <div className="max-w-6xl mx-auto px-4 ">
-      <div className="flex flex-col flex-wrap">
-        <div className="flex flex-col md:flex-row items-between justify-center w-full mb-24 pt-16 ">
+      <div className="flex flex-col flex-wrap ">
+        <div className="flex flex-row flex-wrap md:flex-row items-between justify-center w-full mb-24 pt-16">
           <div className="flex-1 m-auto w-full">
             <h1
               ref={fNameRef}
@@ -239,7 +239,7 @@ export default function Projects() {
             window.open(
               "https://github.com/yasirulokesha",
               "_blank",
-              "noopener,noreferrer"
+              "noopener,noreferrer",
             );
           }}
         >

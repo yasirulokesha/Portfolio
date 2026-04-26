@@ -43,7 +43,7 @@ function Content() {
   return (
     <div
       ref={scrollRef}
-      className="block outline-gray-900 outline-1 backdrop-blur-3xl bg-gray-950  w-full md:overflow-x-visible overflow-x-hidden h-full overflow-scroll p-10 rounded-2xl text-white"
+      className="block outline-gray-900 outline-1 backdrop-blur-3xl bg-gray-950  w-full md:overflow-x-visible overflow-x-hidden md:h-full h-screen overflow-scroll p-10 rounded-2xl text-white"
     >
       {active === "home" ? (
         <Home />

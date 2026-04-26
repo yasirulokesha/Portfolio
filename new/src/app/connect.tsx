@@ -92,7 +92,7 @@ export default function Contact() {
   return (
     <div className="max-w-6xl mx-auto px-4 ">
       <div className="flex flex-col">
-        <div className="flex flex-row flex-wrap md:flex-row items-between justify-center w-full mb-24 pt-16">
+        <div className="flex flex-row flex-wrap md:flex-row items-between justify-center w-full mb-24 pt-16 ">
           <div className="flex-1 m-auto w-full">
             <h1
               ref={fNameRef}
@@ -183,10 +183,10 @@ export default function Contact() {
               </button> */}
             </div>
           </div>
-          <div ref={imageRef} className="flex">
-            <Image src={img} alt="img" className="max-w-100 absolute z-10" />
+          <div ref={imageRef} className="md:flex mt-10 hidden">
+            <Image src={img} alt="img" className="max-w-90 w-80 absolute z-10" />
             <div className="flex -inset-4 bg-blue-500/20 rounded-full blur-3xl animate-pulse">
-              <Image src={img} alt="img" className="max-w-100 " />
+              <Image src={img} alt="img" className="max-w-80" />
             </div>
           </div>
         </div>

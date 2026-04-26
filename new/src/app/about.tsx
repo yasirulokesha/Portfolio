@@ -227,18 +227,6 @@ export default function About() {
           <Education />
         </div>
       </div>
-
-      {/* CTA Button */}
-      <div className="flex justify-center mt-10">
-        <button
-          type="button"
-          className="button bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 px-10 rounded-xl transform transition-all duration-300 hover:scale-105 shadow-lg flex items-center group"
-          onClick={() => setActive("connect")}
-        >
-          Let&apos;s Connect
-          <ArrowUpRight className="ml-2 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
-        </button>
-      </div>
     </div>
   );
 }
