@@ -169,7 +169,7 @@ export default function Home() {
             {/* <div className="absolute -inset-4 bg-blue-500/20 rounded-full blur-3xl animate-ping transition-all duration-1000"></div> */}
             <div className="absolute -inset-4 bg-blue-500/20 rounded-full blur-3xl "></div>
             {genImg1 ? (
-              <img
+              <Image
                 src={
                   genImg1 ||
                   "https://blocks.astratic.com/img/general-img-landscape.png"
@@ -180,7 +180,7 @@ export default function Home() {
                 className="rounded-full shadow-2xl z-10 top-10"
               />
             ):(
-              <img
+              <Image
                 src={
                   "https://blocks.astratic.com/img/general-img-landscape.png"
                 }
@@ -192,7 +192,7 @@ export default function Home() {
             )}
 
             {genImg2 ? (
-              <img
+              <Image
                 src={
                   genImg2 ||
                   "https://blocks.astratic.com/img/general-img-landscape.png"
@@ -203,7 +203,7 @@ export default function Home() {
                 className="rounded-full shadow-2xl z-10  top-10 animate-fadeIn"
               />
             ):(
-              <img
+              <Image
                 src={
                   "https://blocks.astratic.com/img/general-img-landscape.png"
                 }
@@ -221,7 +221,7 @@ export default function Home() {
                 priority
               />
             ):(
-              <img
+              <Image
                 src={
                   "https://blocks.astratic.com/img/general-img-landscape.png"
                 }
@@ -233,7 +233,7 @@ export default function Home() {
             )}
 
             {genImg3 ? (
-              <img
+              <Image
                 src={
                   genImg3 ||
                   "https://blocks.astratic.com/img/general-img-landscape.png"
@@ -244,7 +244,7 @@ export default function Home() {
                 className="rounded-full shadow-2xl overflow-hidden h-30 w-30 object-cover translate-x-full "
               />
             ):(
-              <img
+              <Image
                 src={
                   "https://blocks.astratic.com/img/general-img-landscape.png"
                 }

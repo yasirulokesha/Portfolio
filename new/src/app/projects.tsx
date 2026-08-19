@@ -6,7 +6,6 @@ import img from "@/assets/Asset 5.png";
 
 import gsap from "gsap";
 import { ArrowUpRight, GithubIcon } from "lucide-react";
-import link from "next/dist/client/link";
 
 export default function Projects() {
   const imageRef = useRef(null);
@@ -16,6 +15,22 @@ export default function Projects() {
   const sectionRef = useRef<HTMLElement[]>([]);
 
   const project_list = [
+    {
+      project_name: "TaskMe - Task Management Web Application",
+      tools: "ReactJS | OAuth2 | ExpressJS | MongoDB | JWT",
+      preview: "/projects/taskme.png",
+      description:
+        "TaskMe is a task management web application that allows users to create, manage, and track their tasks efficiently. It features user authentication using Google, task categorization, and real-time updates.",
+      link: "https://task-me-app-neon.vercel.app/",
+    },
+    {
+      project_name: "Website for a Textile Company",
+      tools: "HTML | CSS | JS | PHP",
+      preview: "/projects/cts.png",
+      description:
+        "A dynamic website for a textile company, built with HTML, CSS, JavaScript, and PHP. The website features a responsive design, interactive elements, and a user-friendly interface.",
+      link: "https://basic-textile-website-prototype.vercel.app/index.html",
+    },
     {
       project_name: "TRAFFIC-BASED ROUTE GUIDANCE SYSTEM",
       tools: "Python | Jupyter Notebook",
@@ -143,7 +158,7 @@ export default function Projects() {
   return (
     <div className="max-w-6xl mx-auto px-4 ">
       <div className="flex flex-col flex-wrap ">
-        <div className="flex flex-row flex-wrap md:flex-row items-between justify-center w-full mb-24 pt-16">
+        <div className="flex flex-row flex-wrap md:flex-row items-between justify-center mb-24 pt-16">
           <div className="flex-1 m-auto w-full">
             <h1
               ref={fNameRef}
@@ -192,13 +207,15 @@ export default function Projects() {
             <div
               ref={add_sections}
               key={index}
-              className="flex flex-col md:m-0 m-auto bg-gray-800/80 round-xl max-h-100 h-100 w-80 max-w-80 rounded-xl outline-gray-700 outline-1 p-4 hover:scale-105 duration-300 "
+              className="flex flex-col md:m-0 m-auto bg-gray-800/80 round-xl h-fit w-80 max-w-80 rounded-xl outline-gray-700 outline-1 px-7 py-3 pt-5 hover:scale-105 duration-300 "
             >
               {project.preview != "none" ? (
-                <img
+                <Image
                   src={project.preview}
                   alt={`${project.project_name} Preview`}
-                  className="rounded-md hover:scale-105 duration-300 shadow-2xl drop-shadow-lg"
+                  width={320}
+                  height={160}
+                  className="rounded-md hover:scale-105 duration-300 shadow-2xl shadow-gray-900/50"
                 />
               ) : (
                 <div className="w-full bg-gray-500/2 outline-1 outline-gray-700 rounded-md h-40 flex items-center justify-center">

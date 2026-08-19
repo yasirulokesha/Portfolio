@@ -1,8 +1,8 @@
 "use client";
 
-import { useState } from 'react';
+// import { useState } from 'react';
 import Image from 'next/image';
-import { ArrowUpRight } from 'lucide-react';
+import { useState } from 'react';
 
 const list = [
   {
@@ -26,12 +26,12 @@ const list = [
   
 ];
 
-export default function certificates() {
+export default function Certificates() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   return (
     <>
-      <section className="min-h-screen py-20 px-4 md:px-8 lg:px-16 bg-gradient-to-b  ">
+      <section className="min-h-screen py-20 px-4 md:px-8 lg:px-16">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
           <div className="text-center mb-16">
