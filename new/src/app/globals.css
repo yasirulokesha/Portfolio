@@ -35,3 +35,17 @@ body {
     background-position: 0% 50%;
   }
 }
+
+@keyframes move-left-right {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+.line-animation {
+  width: 100%;
+  animation: move-left-right 50s linear infinite;
+}

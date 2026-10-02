@@ -12,6 +12,7 @@ import Projects from "./projects";
 import Contact from "./connect";
 import { useEffect, useRef } from "react";
 import SidebarNavigation from "./SideBarNavigation";
+import Certificates from "./certificates";
 
 export default function App() {
   return (
@@ -57,6 +58,8 @@ function Content() {
         <Projects />
       ) : active === "contact" ? (
         <Contact />
+      ) : active === "certificates" ? (
+        <Certificates />
       ) : (
         <p>Please select a section from the sidebar</p>
       )}

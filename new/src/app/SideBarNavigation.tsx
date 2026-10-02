@@ -93,6 +93,7 @@ const SidebarNavigation: React.FC<SidebarProps> = () => {
       badge: "7",
     },
     { id: "contact", icon: <Share2Icon size={20} />, label: "Connect" },
+    { id: "certificates", icon: <Share2Icon size={20} />, label: "Licenses & Certificates" },
   ];
 
   // Teams data
